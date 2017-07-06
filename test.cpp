@@ -1,4 +1,4 @@
-#include "aa/classA.h"
+#include "aa/template.h"
 void fun() {
-    Template<double> aa;
+    Template<double> b;
 }
