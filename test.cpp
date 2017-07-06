@@ -1,9 +1,4 @@
-#include "aa\RGB.h"
-
-#include <iostream>
-
+#include "aa/classA.h"
 void fun() {
-    //classB aa;
-    RGBAColor aab;
-    //std::cout << aa.funAA() << std::endl;
+    Template<double> aa;
 }

@@ -1,14 +1,11 @@
 #pragma once
 #include "config.h"
 #include "template.h"
-
+#include <vector>
 class AA_API classA : public Template<double> {
+    
 public:
-    classA();
-    void m_fun(Template<double> t);
+    classA() {}
+    void m_fun() {  }
 };
 
-class AA_API classAA {
-public:
-    int funAA() { return 10; };
-};

@@ -1,8 +1,7 @@
-#include "bb\classB.h"
-#include <iostream>
+//#include "aa/fixed_array.h"
+#include "aa/template.h"
 
-void fun2() {
-    classB aa;
-    //RGBAColor aab;
-    //std::cout << aa.funAA() << std::endl;
+//template class Template<double>;
+void func() {
+    Template<double> aa;
 }
