@@ -1,15 +1,13 @@
 #pragma once
 
 #ifdef _WIN32
-#	define EXPORT_DYNAMIC_LIBRARY __declspec( dllexport )
-#   define IMPORT_DYNAMIC_LIBRARY __declspec( dllimport )
+#  ifdef BUILD_AA
+#	 define AA_API __declspec( dllexport )
+#  else
+#	 define AA_API __declspec( dllimport )
+#  endif
 #else
-#	define EXPORT_DYNAMIC_LIBRARY
-#   define IMPORT_DYNAMIC_LIBRARY
+#	define AA_API
 #endif
 
-#ifdef BUILD_AA
-#	define AA_API EXPORT_DYNAMIC_LIBRARY
-#else
-#	define AA_API IMPORT_DYNAMIC_LIBRARY
-#endif
+

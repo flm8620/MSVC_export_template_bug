@@ -2,7 +2,5 @@
 template<class T>
 class Template {
 public:
-    Template() {
-
-    }
+    Template() {  }
 };
